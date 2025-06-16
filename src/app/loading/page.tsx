@@ -13,7 +13,6 @@ export default function LoadingScreeen() {
         const interval = setInterval(() => {
             setProgress(progress + 1);
         },parseFloat(getComputedStyle(root).getPropertyValue("--prog_bar-seconds"))*7)
-        console.log
         
         return () => clearInterval(interval)
     })
