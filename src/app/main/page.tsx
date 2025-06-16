@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { items } from "../data/items";
+import Image from "next/image";
 
 export default function Home() {
   const [currentNum, setCurrentNum] = useState(0);
@@ -36,7 +37,7 @@ export default function Home() {
             {items.map(({id, label, url}) => 
               {if (currentNum === id) {
                 return (
-                  <img
+                  <Image
                     key={id}
                     src={url}
                     alt={label}

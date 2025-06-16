@@ -1,10 +1,13 @@
+import Image from "next/image";
+
 export default function Luxury() {
 return (
         <main data-aos="fade-in" className="min-h-screen mt-[100px]">
             <div className="relative flex  mr-0 ml-[300px]">
                 <div data-aos="fade-right" className="drop-shadow-md/40 text-[60px] absolute top-1/2 -left-[230px]">Kamiyama Third Place</div>
-                <img
+                <Image
                     src="/images/kamiyama-third-place/Kamiyama_thumb.png"
+                    alt="kamiyama"
                     className="w-full h-auto lg:h-[800px] object-cover "             
                 />
             </div>
@@ -16,8 +19,9 @@ return (
                     <div className="shippori_mincho text-[32px]" >
                         日本らしいサードプレイス
                     </div>
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/1.png"
+                        alt="kamiyama"
                         className="mt-[50px] w-full h-auto object-cover p-[10px] bg-white"             
                     />
                     <div className="mt-[50px] mb-[200px] noto_sans_jp text-justify">
@@ -26,35 +30,42 @@ return (
                     <div className="shippori_mincho text-[32px]" >
                         緑道によるサードプレイス
                     </div>
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/2.png"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mt-[50px] p-[10px] bg-white"             
                     />
                     <div className="mt-[50px] mb-[200px] noto_sans_jp text-justify">
                         緑道はサードプレイスとしてはうってつけの場所である。そこで、敷地の隣にある緑道を敷地まで広げ、そこに施設を設計することでサードプレイスとしてふさわしい場所にした。
                     </div>
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/4.jpg"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mb-[200px]"
                     />
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/5.jpeg"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mb-[200px]"
                     />
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/6.jpeg"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mb-[200px]"
                     />
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/7.jpeg"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mb-[200px]"
                     />
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/8.jpeg"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mb-[200px]"
                     />
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/9.jpeg"
+                        alt="kamiyama"
                         className="w-full h-auto object-cover mb-[200px]"
                     />
                 </div>

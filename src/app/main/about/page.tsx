@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
 
     const skills = [
@@ -18,7 +20,7 @@ export default function About() {
     return (
         <main data-aos="fade-in" className="min-h-screen mt-[150px] mx-[20px]">
             <div className="flex h-64 mt-[200px] ml-[50px]">
-                <img
+                <Image
                     src="/images/profile.jpg"
                     alt="profile"
                     className="lg:h-96 lg:mx-[100px]"             

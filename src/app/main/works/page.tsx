@@ -1,5 +1,6 @@
 import { items } from "@/app/data/items";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Works() {
     return (
@@ -7,7 +8,7 @@ export default function Works() {
         <Link href="/main/works/gallery-design">
             <section className="w-[800px] h-[350px] lg:h-[400px] flex items-center justify-between glow-white">
                 <div className="w-full h-full">
-                    <img
+                    <Image
                         src="/images/gallery-design/gallery-design-thumb.jpg"
                         alt="gallery-design"
                         className="h-full w-full object-cover"             
@@ -30,7 +31,7 @@ export default function Works() {
                     </div>
                 </div>
                 <div className="w-full h-full">
-                    <img
+                    <Image
                         src="/images/xr-text-input/xr-thumb.jpg"
                         alt="xr-text-input"
                         className="h-full w-full object-cover"             
@@ -41,7 +42,7 @@ export default function Works() {
         <Link href="/main/works/kamiyama-third-place">
             <section className="w-[800px] h-[300px] lg:h-[400px] my-[200px] flex items-center justify-between glow-white">
                 <div className="h-full">
-                    <img
+                    <Image
                         src="/images/kamiyama-third-place/Kamiyama_thumb.png"
                         alt="Kamiyama-third-place"
                         className="w-full h-full object-cover"             
