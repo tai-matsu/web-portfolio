@@ -1,28 +1,116 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
+
+@import "aos/dist/aos.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-text: #fff;
+  --color-bg: #000;
+
+  --font-size-base: 16px;
+  --font-size-title: 96px;
+  --font-size-projectName: 48px;
+
+  --prog_bar-seconds: 2s;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+body {
+  font-family: 'Bodoni Moda', 'Noto Sans JP', sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 2;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.header_left {
+  font-size: 20px;
+}
+
+.header_right {
+  font-size: 12px;
+}
+
+.project {
+  font-size: var(--font-size-projectName);
+}
+
+.noto_sans_jp {
+  font-family: "Noto Sans JP";
+}
+
+.shippori_mincho {
+  font-family: "Zen Old Mincho";
+}
+
+.footer {
+  position: absolute;
+  width: 137px;
+  height: 19px;
+  left: calc(50% - 137px/2 + 0.5px);
+
+  font-size: 12px;
+  line-height: 50px;
+}
+
+h1 {
+  font-size: 80px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 140px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h2 {
+  font-size: var(--font-size-title);
+}
+
+.prog_bar {
+  width: 0px;
+  height:1px;
+  background: #fff;
+  animation: progress var(--prog_bar-seconds) normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+  to {width: 100%;}
+}
+
+.text-center { text-align: center; }
+
+.glow-white {
+  transition: all 0.3s;
+}
+
+.glow-white:hover {
+  box-shadow: 0 0 20px 5px grey;
+  transform: scale(1.01);
 }
