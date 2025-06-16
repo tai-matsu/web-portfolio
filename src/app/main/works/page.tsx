@@ -1,4 +1,3 @@
-import { items } from "@/app/data/items";
 import Link from "next/link";
 import Image from "next/image";
 
