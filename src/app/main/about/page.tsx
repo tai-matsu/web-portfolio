@@ -19,14 +19,16 @@ export default function About() {
 
     return (
         <main data-aos="fade-in" className="min-h-screen mt-[150px] mx-[20px]">
-            <div className="flex h-64 mt-[200px] ml-[50px]">
+            <div className="sm:flex h-auto mt-0 sm:mt-[200px] ml-0 sm:ml-[50px]">
                 <Image
                     src="/images/profile.jpg"
                     alt="profile"
-                    className="lg:h-96 lg:mx-[100px]"             
+                    width={500}
+                    height={300}
+                    className="sm:w-64 lg:w-96 sm:h-64 lg:h-96 lg:mx-[100px] object-contain"             
                 />
-                <div className="ml-[50px]">
-                    <div className="leading-none text-[48px]">Taichi Matsusaki</div>
+                <div className="ml-[20px] sm:ml-[50px]">
+                    <div className="mt-[100px] sm:mt-0 leading-none text-[48px]">Taichi Matsusaki</div>
                     <div className="text-[16px] font-light">松崎太一</div>
                     <div className="mt-[100px] mb-[5px] text-[32px]">Profile</div>
                     <ul className="noto_sans_jp font-light">

@@ -17,9 +17,8 @@ export default function Home() {
         <h2 className="mt-[550px]">Works</h2>
         <div className="relative flex mt-[50px] lg:ml-[50px]">
           <div className="mr-[50px] border-l border-white"/>
-          <div className="absolute left-[-16px] top-[280px] lg:top-[190px] py-4 bg-black">
-            <div className="[writing-mode:sideways-lr]">{String(currentNum).padStart(2, "0")}</div>
-          </div>
+          <div className="absolute h-[50px] w-[30px] left-[-15px] top-[270px] lg:top-[195px] p-1 bg-black"></div>
+          <div className="z-1 vertical-text absolute h-[50px] w-[30px] left-[-15px] top-[305px] lg:top-[230px]">{String(currentNum).padStart(2, "0")}</div>
           <ul className="project pb-[70px]">
             {items.map(({ id, label }) => (
               <li
@@ -41,7 +40,9 @@ export default function Home() {
                     key={id}
                     src={url}
                     alt={label}
-                    className="h-full object-contain"
+                    width={500}
+                    height={300}
+                    className="h-0 md:h-full object-contain"
                   />
                 );
               }}

@@ -19,10 +19,10 @@ export default function RootLayout({ children }: Readonly<{children: React.React
       <body>
         <header className="fixed top-0 w-full h-[60px] z-1 bg-black">
           <Link href="/loading">
-            <div data-aos="fade-in" className="header_left fixed left-[20px] top-[10px] w-[212px] h-[32px]" >TAICHI MATSUSAKI</div>
+            <div data-aos="fade-in" className="header_left fixed left-[20px] top-[20px] sm:top-[10px] w-[212px] h-[32px]" >TAICHI MATSUSAKI</div>
           </Link>
           <nav>
-            <ul data-aos="fade-in" className="nav-list header_right fixed right-[72px] top-[20px]">
+            <ul data-aos="fade-in" className="nav-list header_right fixed right-[20px] sm:right-[72px] top-[20px]">
               <li className="transition hover:opacity-50"><a href="/main">HOME</a></li>
               <li className="transition hover:opacity-50"><a href="/main/works">WORKS</a></li>
               <li className="transition hover:opacity-50"><a href="/main/about">ABOUT</a></li>
