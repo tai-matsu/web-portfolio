@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
     <html lang="ja" className={`${noto_Sans_JP.className} ${shippori_Mincho.className} ${bodoni_Moda.className}`}>
       <body>
         <header className="fixed top-0 w-full h-[60px] z-1 bg-black">
-          <Link href="/loading">
+          <Link href="/preloader">
             <div data-aos="fade-in" className="header_left fixed left-[20px] top-[20px] sm:top-[10px] w-[212px] h-[32px]" >TAICHI MATSUSAKI</div>
           </Link>
           <nav>
